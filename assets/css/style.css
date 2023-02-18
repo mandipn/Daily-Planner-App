@@ -1,0 +1,48 @@
+.now {
+    background-color: #be1b1b;
+    border-radius: 20px;
+  }
+  
+  .back {
+    background-color: #1c9bd1;
+    border-radius: 20px;
+    color: white;
+  }
+  
+  .forward {
+    background-color: #313534;
+    border-radius: 20px;
+  }
+
+  .timeinrow {      
+    border-top: 1px solid rgb(160, 97, 97);
+    height: 70px;
+  }
+
+  .itemforthehour {
+    border-top: 1px solid rgb(160, 97, 97);
+  }
+
+#resetInfoButton {
+    margin-top: 12px;
+}
+
+.saveInfoButton {
+    background-color: #38eedf;
+    color: rgb(202, 18, 18);
+    
+}
+
+.jumbotron {
+
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    color: black;  
+}
+
+.container {
+    margin-top: 20px;
+    text-align: center;
+}
+

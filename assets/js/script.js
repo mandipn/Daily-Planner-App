@@ -12,7 +12,14 @@ $(document).ready(function () {
     localStorage.clear();
   });
 
+  
 
+  $(".btntosave").click(function (event) {
+    event.preventDefault();
+    var value = $(this).child(".the-hour").val();
+    var time = $(this).parent().attr("id").split("-")[1];
+    localStorage.setItem(time, value);
+  });
 
 
   $("#0900AM .the-hour").val(localStorage.getItem("9h"));

@@ -1,18 +1,18 @@
 $(document).ready(function () {
     
     let LiveMoment = moment().format("dddd MMMM Do");
-    let TodayDate = document.getElementById("currentDay");
+    let TodayDate = document.getElementById("today");
     TodayDate.innerHTML = LiveMoment;
     let liveHour = moment().format("HH");
 
  
  $("#resetInfoButton").click(function (event) {
     event.preventDefault;
-    $("infoloc").val("");
+    $("textarea").val("");
     localStorage.clear();
   });
 
-  $(".time-div").each(function () {
+  $(".timeinrow").each(function () {
     var hourdiv = $(this).attr("id").split("-")[1];
     
     if (liveHour == hourdiv) {

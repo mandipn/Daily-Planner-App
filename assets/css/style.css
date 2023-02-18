@@ -14,22 +14,19 @@
     border-radius: 20px;
   }
 
-  .timeinrow {      
+   /* .timeinrow {      
     border-top: 1px solid rgb(160, 97, 97);
     height: 70px;
-  }
+    text-align: center;
+  }  */
 
   .itemforthehour {
     border-top: 1px solid rgb(160, 97, 97);
   }
 
-#resetInfoButton {
-    margin-top: 12px;
-}
-
 .saveInfoButton {
     background-color: #38eedf;
-    color: rgb(202, 18, 18);
+    color: rgb(202, 18, 18);    
     
 }
 
@@ -42,7 +39,6 @@
 }
 
 .container {
-    margin-top: 20px;
     text-align: center;
 }
 

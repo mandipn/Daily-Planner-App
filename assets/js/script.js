@@ -12,4 +12,16 @@ $(document).ready(function () {
     localStorage.clear();
   });
 
-  
+
+
+
+  $("#0900AM .the-hour").val(localStorage.getItem("9h"));
+  $("#1000AM .the-hour").val(localStorage.getItem("10h"));
+  $("#1100AM .the-hour").val(localStorage.getItem("11h"));
+  $("#1200PM .the-hour").val(localStorage.getItem("12h"));
+  $("#1300PM .the-hour").val(localStorage.getItem("13h"));
+  $("#1400PM .the-hour").val(localStorage.getItem("14h"));
+  $("#1500PM .the-hour").val(localStorage.getItem("15h"));
+  $("#1600PM .the-hour").val(localStorage.getItem("16h"));
+  $("#1700PM .the-hour").val(localStorage.getItem("17h"));
+});

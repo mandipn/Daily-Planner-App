@@ -12,7 +12,20 @@ $(document).ready(function () {
     localStorage.clear();
   });
 
-  
+  $(".time-div").each(function () {
+    var hourdiv = $(this).attr("id").split("-")[1];
+    
+    if (liveHour == hourdiv) {
+      $(this).addClass("now");
+      $(this).children(".description").addClass("whitefont");
+    } else if (liveHour < hourdiv) {
+      $(this).removeClass("now");
+      $(this).addClass("forward");
+    } else if (liveHour > hourdiv) {
+      $(this).removeClass("forward");
+      $(this).addClass("back");
+    }
+  });
 
   $(".btntosave").click(function (event) {
     event.preventDefault();

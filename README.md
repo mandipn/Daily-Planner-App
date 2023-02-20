@@ -26,7 +26,13 @@ This is a simple calendar application that allows a user to save events for each
 
 # Screenshots of the application
 
+![image](https://user-images.githubusercontent.com/115933407/220112259-ae60302c-7dec-4266-9718-5ea7db4887be.png)
 
+![image](https://user-images.githubusercontent.com/115933407/220112434-004da53b-458e-47ba-bc6f-e0a5ea7ab906.png)
+
+![image](https://user-images.githubusercontent.com/115933407/220112581-2cc85621-d015-41f6-895e-98156400bfb0.png)
+
+![image](https://user-images.githubusercontent.com/115933407/220112800-2fe23130-4870-42ec-969f-124388462cdb.png)
 
 ## Links
 

@@ -1,14 +1,14 @@
 $(document).ready(function () {
  
   $("#0900AM .itemforthehour").val(localStorage.getItem("0900AM"));
-  $("#1000AM .itemforthehour").val(localStorage.getItem("10h"));
-  $("#1100AM .itemforthehour").val(localStorage.getItem("11h"));
-  $("#1200PM .itemforthehour").val(localStorage.getItem("12h"));
-  $("#1300PM .itemforthehour").val(localStorage.getItem("13h"));
-  $("#1400PM .itemforthehour").val(localStorage.getItem("14h"));
-  $("#1500PM .itemforthehour").val(localStorage.getItem("15h"));
-  $("#1600PM .itemforthehour").val(localStorage.getItem("16h"));
-  $("#1700PM .itemforthehour").val(localStorage.getItem("17h"));  
+  $("#1000AM .itemforthehour").val(localStorage.getItem("1000AM"));
+  $("#1100AM .itemforthehour").val(localStorage.getItem("1100AM"));
+  $("#1200PM .itemforthehour").val(localStorage.getItem("1200PM"));
+  $("#1300PM .itemforthehour").val(localStorage.getItem("1300PM"));
+  $("#1400PM .itemforthehour").val(localStorage.getItem("1400PM"));
+  $("#1500PM .itemforthehour").val(localStorage.getItem("1500PM"));
+  $("#1600PM .itemforthehour").val(localStorage.getItem("1600PM"));
+  $("#1700PM .itemforthehour").val(localStorage.getItem("1700PM"));  
 
     let LiveMoment = moment().format("dddd MMMM Do");
     let TodayDate = document.getElementById("today");
@@ -23,7 +23,7 @@ $(document).ready(function () {
     localStorage.clear();
   });
 
-  //check each hour block and change the background to the relative colour
+  
 $.each(timeBlock, function () {
     var hourId = parseInt($(this).attr("id"));
     console.log(liveHour)
@@ -43,29 +43,7 @@ $.each(timeBlock, function () {
     }
 });
 
-  // $(".timeinrow").each(function () {
-  //   var hourdiv = $(this).attr("id").split("-")[1];
-    
-  //   if (liveHour == hourdiv) {
-  //     $(this).addClass("now");
-  //     $(this).children(".description").addClass("whitefont");
-  //   } else if (liveHour < hourdiv) {
-  //     $(this).removeClass("now");
-  //     $(this).addClass("forward");
-  //   } else if (liveHour > hourdiv) {
-  //     $(this).removeClass("forward");
-  //     $(this).addClass("back");
-  //   }
-  // });
-
-  // $(".saveInfoButton").click(function (event) {
-  //   event.preventDefault();
-  //   var value = $(this).siblings(".itemforthehour").val();
-  //   var time = $(this).parent().attr("id").split("-")[1];
-  //   localStorage.setItem(time, value);
-  // });
-
-  $(".saveInfoButton").on("click", function(){
+   $(".saveInfoButton").on("click", function(){
 
     var value = $(this).siblings(".itemforthehour").val();
     var time = $(this).parent().attr("id");
@@ -73,13 +51,6 @@ $.each(timeBlock, function () {
     console.log(time + " " + value);
     localStorage.setItem(time, value);
 
-//     document.getElementById("saved").innerHTML = "Saved!";
-
-// setTimeout(function(){
-//     document.getElementById("saved").innerHTML = '';
-// }, 3000);
-    
-// save text area into the local storage
 $(".saveInfoButton").on("click", function (event) {
   var calendarItem =
       event.target.parentElement.previousElementSibling.children[0].value;

@@ -55,14 +55,7 @@
   }
   
   .saveInfoButton {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #06aed5;
-    color: white;
-    width: 5vw;
-    height: 1vw;
-    margin-left: 1000px;
+        margin-left: 1000px;
   }
   
   .saveInfoButton i:hover {
@@ -77,4 +70,11 @@
   align-content: center;
   justify-content: center;
   }
+
+  .itemforthehour {
+
+    color: #000000;
+  }
+
+
   

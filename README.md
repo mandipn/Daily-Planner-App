@@ -1,4 +1,4 @@
-# Week day scheduler by Mandip Nijor
+# Daily Planner App by Mandip Nijor
 
 ## Repository
 
@@ -14,7 +14,7 @@ This is a simple calendar application that allows a user to save events for each
 
 2. Click where it states "Type the event here then click save on right" and type the description of the event.
 
-3. Then click the save icon on the right side of the event. If you do not click save, your event will not save which can be demonstrated by refreshing the page without hitting save.
+3. Then click the save icon on the right side of the event (just under the event row). If you do not click save, your event will not save which can be demonstrated by refreshing the page without hitting save.
 
 4. You can then add as many events as you like for the day.
 
@@ -36,8 +36,8 @@ This is a simple calendar application that allows a user to save events for each
 
 ## Links
 
-- Repository: 
-- Deployed Application: 
+- Repository: https://github.com/mandipn/Daily-Planner-App
+- Deployed Application: https://mandipn.github.io/Daily-Planner-App/
 
 ## License
 
